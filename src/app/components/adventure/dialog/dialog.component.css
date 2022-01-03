@@ -1,0 +1,27 @@
+.dialog-title {
+    font-size: 1.25rem;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 500;
+    line-height: 1.6;
+    letter-spacing: 0.0075em;
+}
+
+.dialog-content {
+    flex: 1 1 auto;
+    padding: 8px 24px;
+    overflow-y: auto;
+}
+
+.dialog-btn-flex {
+    flex: 0 0 auto;
+    display: flex;
+    padding: 8px;
+    align-items: center;
+    justify-content: flex-end;
+}
+.dialog-button {
+    width: 100%;
+    display: inherit;
+    align-items: inherit;
+    justify-content: inherit;
+}

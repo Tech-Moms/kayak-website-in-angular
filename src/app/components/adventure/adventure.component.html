@@ -1,0 +1,23 @@
+<div class="adventure-page">
+    <div *ngFor="let excursion of excursionData">
+        <div class="excursion-card">
+            <img src={{excursion.image}} width="300" />
+            <div class="excursion-content">
+                <div class="excursion-title">{{excursion.excursionTitle}}</div>
+                <div class="rating-flex">
+                    <i class="fas fa-star stars"></i>
+                    <i class="fas fa-star stars"></i>
+                    <i class="fas fa-star stars"></i>
+                    <i class="fas fa-star stars"></i>
+                    <i class="fas fa-star stars"></i>
+                    <div class="reviews">{{excursion.reviews}} Reviews</div>
+                </div>
+                <div class="description">{{excursion.excursionDescription}}</div>
+                <div class="actions-flex">
+                    <button class="view-tour-btn" (click)="viewTour(excursion.excursionTitle)">VIEW TOUR</button>
+                    <div class="price">{{excursion.cost | currency : 'USD' : 'symbol' : '1.0-0' }} USD</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
